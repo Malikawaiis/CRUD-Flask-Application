@@ -7,9 +7,9 @@ from wtforms.validators import DataRequired, Email, Length, InputRequired, Regex
 from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Add a secret key for session management
+app.secret_key = 'your_secret_key'  
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///firstapp.db"
-app.config['SECRET_KEY'] = 'a_very_secure_secret_key'  # You can generate a random key
+app.config['SECRET_KEY'] = 'a_very_secure_secret_key' 
 app.config['WTF_CSRF_ENABLED'] = True  # Enable CSRF protection
 
 # Initialize the database and Bcrypt
